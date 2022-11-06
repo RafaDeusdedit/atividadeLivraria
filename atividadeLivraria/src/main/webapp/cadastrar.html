@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>Cadastrar livro</h1>
+	<form name = "formLivro" action="insert">
+	
+		<table>
+			<tr>
+				<td><input type="number" name="idc" placeholder = "Código do livro"> </td>
+			</tr>
+			
+			<tr>
+				<td><input type="text" name="titulo" placeholder = "Nome"> </td>
+			</tr>
+			
+			<tr>
+				<td><input type="text" name="autor" placeholder = "Autor"> </td>
+			</tr>
+			
+			<tr>
+				<td><select name="categoria">
+	  	<option value="Arquitetura">Arquitetura</option>
+	  	<option value="Desgin" >Desgin</option>
+	  	<option value="Informática">Informática</option>
+	  	<option value="Literatura brasileira">Literatura brasileira</option>
+	  	<option value="Literatura infantil">Literatura infantil</option>
+	  	<option value="Literatura universal">Literatura universal</option>
+	  	<option value="Música e arte">Música e arte</option>
+	</select> </td>
+			</tr>
+			
+			<tr>
+				<td><input type="number" name="valor" placeholder = "Valor"> </td>
+			</tr>
+		</table>
+		<input type="button" value="adicionar" class="botao1" onclick="validar()">
+	
+	</form>
+	<script src="Scripts/validador.js"></script>
+	
+	<a href="index.html">|=Home=|</a>
+	<a href="main">|=Lista livro=|</a>
+</body>
+</html>
